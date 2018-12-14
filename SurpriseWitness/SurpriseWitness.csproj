@@ -1,0 +1,18 @@
+<Project Sdk="Xamarin.Mac.Sdk/0.17.0">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <UseSGen>false</UseSGen>
+    <AssemblyName>SurpriseWitness</AssemblyName>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <StartAction>Program</StartAction>
+    <StartProgram>$(OutputPath)$(TargetFramework)\SurpriseWitness.app</StartProgram>
+    <ExternalConsole>false</ExternalConsole>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Memory" Version="4.5.1" />
+  </ItemGroup>
+</Project>
