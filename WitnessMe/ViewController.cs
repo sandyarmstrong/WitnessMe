@@ -15,7 +15,8 @@ namespace WitnessMe
         {
             base.ViewDidLoad();
 
-            // Do any additional setup after loading the view.
+            // In a normal Xamarin.Mac project, this runs without issue.
+            var x = System.Buffers.ReadOnlySequence<int>.Empty;
         }
 
         public override NSObject RepresentedObject
